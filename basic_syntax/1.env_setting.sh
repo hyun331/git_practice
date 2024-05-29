@@ -80,4 +80,10 @@ git push origin master
 git config --global user.name "hyun331"
 git config --global user.email "sus03319@gmail.com"
 
-# 지역적 사용자(이름, email) 지정
+# 지역적 사용자(이름, email) 지정. 현재 repository에서만 사용자 변경
+git config --local user.name "hyun331"
+git config --local user.email "sus03319@gmail.com"
+
+# 전체 config 조회 명령어.
+# repository, 이름 , email, 등등
+git config --list
