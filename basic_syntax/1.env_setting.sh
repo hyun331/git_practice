@@ -1,3 +1,4 @@
+# 0529
 # git add . 은 모든 변경사항 staging area로 이동
 git add .
 
