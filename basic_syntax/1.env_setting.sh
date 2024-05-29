@@ -25,7 +25,7 @@ git init
 # 원격지 주소를 생성 및 추가 , 정말 많이 사용하는 것.
 git remote add origin <레포주소>
 git remote add origin https://github.com/Windowmincastle/github_pratice.git
-
+  
 #원격지 주소 삭제
 git remote remove origin
 #원격 주소 변경

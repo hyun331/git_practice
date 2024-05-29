@@ -14,6 +14,6 @@ git comit -m "메세지 타이틀" -m "메세지 내용"
 
 # vi모드에서 작성 : git commit후 엔터
 
-
+dd
 
     
