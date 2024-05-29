@@ -52,8 +52,8 @@ git pull #(main인 경우 이렇게 만 써도 가능)
 git checkout .
 # working directory에서 추가 파일 취소
 git clean --fdx
-# 수정사항
-git chekcout . | ###################################
+# 수정취소 동시에 취소
+git chekcout . | git clean --fdx
 # staging area 에서의 취소. 
 # staging -> working으로 내려옴. 
 #staged changes에 있는 모든 파일 add 상태로
@@ -72,4 +72,24 @@ git diff A B
 git diff commitId1 commitId2
 git diff A브랜치 B브랜치
 
+
+
+# 원격에서 변경하고 commit -> 아래 명령어 작성
+# fetch : 변경사항을 가져오지만 반영(merge)하지는 않음
+git fetch origin main
+git log  # 원격에서 변경한 커밋 안보임
+git log --all   #원격에서 변경한 커밋 보임. fetch를 안하면 못봄
+git merge origin/main   # 원격과 같아지도록 합치기
+
+
 # 충돌
+# git fetch
+# 원격의 변경사항을 로컬에 가져오되 병합은 하지 않음.
+# 비교 : git pull origin master과 git fetch origin master비교
+
+
+# pull = fetch + merge(=fast-forward. master가 위로올라감)
+# merge : 두개의 변경사항을 합친다. 나의 마스터가 원격마스터로 이동
+
+# 로컬과 원격 모두에 새로운 커밋이 있을 때 merge한다면? (둘의 커밋은 다름)
+# -> D와 E를 합친 새로운 F가 생김
