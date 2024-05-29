@@ -59,5 +59,6 @@ git reset
 # commit 이후의 취소
 git reset HEAD~1
 git reset HEAD^
+
 # push 이후의 취소
 git revert 커밋ID
