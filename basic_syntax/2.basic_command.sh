@@ -27,3 +27,6 @@ git push origin 브랜치명
 
 # 충돌 무시하고 강제 push
 git push origin 브랜드명 
+
+# 충돌발생 -> 원격 내용이 뭔지 pull 받아오고 -> 내껏 비교해서 충돌해결 -> merge
+# 충돌발생 -> 로컬 기준으로 강제 push -> git push origin master --force
