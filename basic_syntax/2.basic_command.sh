@@ -48,7 +48,10 @@ git pull #(main인 경우 이렇게 만 써도 가능)
 # git 작업 취소
 # working directory에서의 취소
 # test1.txt를 변경하고 저장함. 그 전으로 돌리고 싶으면? (ctrl+z말고) -> discard changes 누르기
+<<<<<<< HEAD
 # changes에 있는 모든  파일 이전으로
+=======
+>>>>>>> 5d55fdc90366606c28eb6cd2a6f0fa3ea41c2d1e
 git checkout .
 
 # staging area 에서의 취소. 
