@@ -46,14 +46,14 @@ git pull origin 브랜치명
 git pull #(main인 경우 이렇게 만 써도 가능)
 
 # git 작업 취소
-# working directory에서의 취소
+# working directory에서 수정사항만 취소
 # test1.txt를 변경하고 저장함. 그 전으로 돌리고 싶으면? (ctrl+z말고) -> discard changes 누르기
-<<<<<<< HEAD
 # changes에 있는 모든  파일 이전으로
-=======
->>>>>>> 5d55fdc90366606c28eb6cd2a6f0fa3ea41c2d1e
 git checkout .
-
+# working directory에서 추가 파일 취소
+git clean --fdx
+# 수정사항
+git chekcout . | ###################################
 # staging area 에서의 취소. 
 # staging -> working으로 내려옴. 
 #staged changes에 있는 모든 파일 add 상태로
@@ -65,3 +65,8 @@ git reset HEAD^
 
 # push 이후의 취소
 git revert 커밋ID
+
+# 버전별 비교 명령어 : diff
+# A를 기준으로 B가 어떤 변경이 있는지를 비교함
+git diff A B
+git diff commitId1 commitId2
