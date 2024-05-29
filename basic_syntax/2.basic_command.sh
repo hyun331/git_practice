@@ -21,7 +21,8 @@ git log
 git log --oneline
 # 전체 이력 조회
 git log --all
-
+# 로그를 그래프형태 조회
+git log --graph
 # 원격 저장소로 업로드
 git push origin 브랜치명
 
@@ -30,3 +31,27 @@ git push origin 브랜드명
 
 # 충돌발생 -> 원격 내용이 뭔지 pull 받아오고 -> 내껏 비교해서 충돌해결 -> merge
 # 충돌발생 -> 로컬 기준으로 강제 push -> git push origin master --force
+
+# 특정 commit id로 전환
+# commit message 중요하므로 잘써야함
+git checkout 커밋id
+
+# 다시 현재의 master(브랜치)의 commit으로 return
+git checkout commitID
+# 원래대로 돌아오기
+git checkout main
+
+# git pull : 원격의 변경사항을 local로 다운로드
+git pull origin 브랜치명
+git pull #(main인 경우 이렇게 만 써도 가능)
+
+# git 작업 취소
+# working directory에서의 취소
+git checkout .
+# staging area 에서의 취소
+git reset
+# commit 이후의 취소
+git reset HEAD~1
+git reset HEAD^
+# push 이후의 취소
+git revert 커밋ID
