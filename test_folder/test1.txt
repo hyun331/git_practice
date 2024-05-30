@@ -18,3 +18,5 @@ stash 실습1
 rebase test1
 rebase test2
 rebase test3 위의 123 한번씩 적고 commit하기
+
+squash commit add1
