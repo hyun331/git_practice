@@ -93,3 +93,13 @@ git merge origin/main   # 원격과 같아지도록 합치기
 
 # 로컬과 원격 모두에 새로운 커밋이 있을 때 merge한다면? (둘의 커밋은 다름)
 # -> D와 E를 합친 새로운 F가 생김
+
+
+# 작업중인 사항을 임시저장
+git stash
+# 저장한 최신의 작업목록 꺼내기
+git stash pop 
+# 저장한 작업사항 목록조회
+git stash list
+# 저장한 작업목록 상세조회
+git stash show -p 인덱스
