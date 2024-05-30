@@ -2,3 +2,5 @@ thello world2
 
 case 3
 local에서 수정사항 발생!
+
+stash 실습2
