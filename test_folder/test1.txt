@@ -20,3 +20,4 @@ rebase test2
 rebase test3 위의 123 한번씩 적고 commit하기
 
 squash commit add1
+squash commit add2
