@@ -2,4 +2,4 @@ hello world 1
 hello world 2
 hello world 3
 
-case 3. origin, local 서로 다른 팡리 수정
+case 3. 원격 수정사항
