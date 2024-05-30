@@ -113,3 +113,14 @@ git stash clear
 git stash
 git stash list
 git stash pop
+
+# 버전 명시 tagging
+git tag v1.0
+git tag v1.0 -m "1. 주요추가사항1 2.주요추가사항2"
+
+# tag release 배포
+# commit push 상관없이 태그(release) 별도 push
+git push origin v1.0
+
+# 태그 목록 조회
+git tag
