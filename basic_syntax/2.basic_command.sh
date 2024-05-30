@@ -86,6 +86,8 @@ git merge origin/main   # 원격과 같아지도록 합치기
 # git fetch
 # 원격의 변경사항을 로컬에 가져오되 병합은 하지 않음.
 # 비교 : git pull origin master과 git fetch origin master비교
+# 모든 브랜치 정보 fetch
+git fetch --all
 
 
 # pull = fetch + merge(=fast-forward. master가 위로올라감)
@@ -136,3 +138,22 @@ git checkout 브랜치명
 # 브랜치 목록조회
 git branch
 
+# 브랜치 생성과 전환을 동시에
+git checkout -b 브랜치명
+
+# 생성 후 push( 해당 브랜치로 이동한 뒤)
+git add .
+git commit -m "branch"
+git push origin feature/author_register
+
+# 브랜치는 merge가 된 순간 사라져야함
+
+# local에서 브랜치 생성
+# 주의사항 : 최신화된 main에서 checkout -b하라.
+# git checkout main -> git pull -> git checkout -b branchname
+
+# 원격에서 브랜치 생성
+# 로컬에서 해당 브런치를 fetch
+
+# 모든 브랜치 정보 fetch
+git fetch --all
