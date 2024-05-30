@@ -157,3 +157,12 @@ git push origin feature/author_register
 
 # 모든 브랜치 정보 fetch
 git fetch --all
+git fetch --all --prune     # 청소.. 원격에서 삭제한 브랜치 여기서도 적용해주기.
+# origin branch를 가지고 local branch도 만들어야함.
+
+# 로컬 브랜치 생성
+git fetch --all
+git checkout -b feature1 origin/feature1
+
+# branch 삭제
+git branch -D feature/author_register
