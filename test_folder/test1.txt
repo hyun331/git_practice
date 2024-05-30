@@ -12,3 +12,5 @@ stash 실습1
 
 
 지금 feature1 하는중!
+
+3가지 merge test
