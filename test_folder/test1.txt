@@ -1,6 +1,3 @@
-
-hello world 1 case 5 local에서 변경함
-
 hello world 1 -  case 5. origin에서 수정함. 같은파일
 
 hello world 2
