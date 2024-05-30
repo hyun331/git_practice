@@ -99,10 +99,14 @@ git merge origin/main   # 원격과 같아지도록 합치기
 git stash
 # 저장한 최신의 작업목록 꺼내기
 git stash pop 
+# 저장하 목록은 나둔채 작업목록 적용
+git stash apply stash@인덱스
 # 저장한 작업사항 목록조회
 git stash list
 # 저장한 작업목록 상세조회
 git stash show -p 인덱스
+# 저장한 stash 목록 전체 삭제
+git stash clear
 
 # stash 실습 - 우선 push 해놓고 실습하기
 # test1.txt, test2.txt 변경하기
