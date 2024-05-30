@@ -1,4 +1,4 @@
-hello world - 원격에서 수정함. 같은 파일 수정해보기
+hello world 1 - local에서 수정함. 같은파일
 hello world 2
 hello world 3
 
