@@ -8,3 +8,4 @@ stash 실습2  origin
 
 stash 실습2ddddddd
 
+이건 feature2 고치기
